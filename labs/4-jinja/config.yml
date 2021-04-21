@@ -1,6 +1,6 @@
 ---
 - name: configure network devices
-  hosts: rtr1,rtr2
+  hosts: {{ target_hosts }}
   gather_facts: false
   tasks:
     - name: configure device with config

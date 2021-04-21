@@ -1,6 +1,6 @@
 ---
 - name: configure network devices
-  hosts: {{ target_hosts }}
+  hosts: "{{ target_hosts }}"
   gather_facts: false
   tasks:
     - name: configure device with config

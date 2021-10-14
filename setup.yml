@@ -4,15 +4,15 @@
 
   tasks: 
 
-  - when: ansible_network_os = "eos"
+  - when: ansible_network_os == "eos"
     eos_facts: 
       gather_subset: all
 
-  - when: ansible_network_os = "ios"
+  - when: ansible_network_os == "ios"
     ios_facts: 
       gather_subset: all
 
-  - when: ansible_network_os = "junos"
+  - when: ansible_network_os == "junos"
     junos_facts: 
       gather_subset: all
 
